@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+        <div class="card">
+            <img src="https://image.shutterstock.com/image-vector/movie-cinema-premiere-poster-design-260nw-524732656.jpg"
+            alt="{movie.Title}}" style="width:100%;" height="40%">
+            <h1>{{movie.Title}}</h1>
+            <p class="price">$1/hour</p>
+            <h4><b>Genre</b></h4>
+            <p>{{movie.Genre}}</p>
+            <h4><b>Year</b></h4>
+            <p>{{movie.Year}}</p>
+            <hr>
+        </div>
+        </div>
+        <div class="col-sm-6">
+        <div class="card" style="padding: 16px;">
+            {{msg}}
+                <div class="form-group">
+                    <label for="time">Rent Time (hours)</label>
+                    <input required class="form-control form-control-sm" id="time" placeholder="hours" type="number" min=1 max=10 [(ngModel)]="hours" value="1">
+                </div>
+            <button class="button" (click)="addToCart(hours)" > Add to cart</button>
+        <div style="text-align: left; margin: 5px;">
+            <h5><b>Director  : </b>{{movie.Director}}</h5>
+            <h5><b>Actors    : </b>{{movie.Actors}}</h5>
+            <h5><b>Runtime   : </b>{{movie.Runtime}}</h5>
+            <h5><b>Rating    : </b>{{movie.Rating}}</h5>
+            <h5><b>Votes     : </b>{{movie.Votes}}</h5>
+            <h5><b>Revenue   : </b>{{movie.Revenue}}</h5>
+            <h5><b>Metascrore: </b>{{movie.Metascrore}}</h5>
+            <h5><b>Description: </b>{{movie.Description}}</h5>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+

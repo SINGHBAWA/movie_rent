@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+movie_rent_backend/.idea
+*.pyc
+movie_rent_backend/venv
+*/__pycache__/*
